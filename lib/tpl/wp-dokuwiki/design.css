@@ -1,0 +1,204 @@
+/**
+ * Design elements for default Template
+ *
+ * @author Andreas Gohr <andi@splitbrain.org>
+ * @author Anika Henke <henke@cosmocode.de>
+ */
+
+/* -------------- general elements --------------- */
+
+div.dokuwiki div.nothing {
+  text-align: center;
+  margin: 2em;
+}
+
+/* ---------------- forms ------------------------ */
+
+/* windows share */
+div.dokuwiki a.windows {
+  background: transparent url(images/windows.gif) 0px 1px no-repeat;
+  padding: 1px 0px 1px 16px;
+}
+
+/* interwiki link (icon are set by dokuwiki) */
+div.dokuwiki a.interwiki {
+}
+
+/* link to some embedded media */
+div.dokuwiki a.media {
+}
+
+
+/* email link */
+div.dokuwiki a.mail {
+  background: transparent url(images/mail_icon.gif) 0px 1px no-repeat;
+  padding: 1px 0px 1px 16px;
+}
+
+/* existing wikipage */
+div.dokuwiki a.wikilink1 {
+  color: __existing__ !important;
+}
+
+/* not existing wikipage */
+div.dokuwiki a.wikilink2 {
+  color: __missing__ !important;
+  text-decoration: none !important;
+  border-bottom: dashed 1px __missing__ !important;
+}
+
+/* ------------- Page elements ----------------- */
+
+/* embedded images */
+div.dokuwiki img.media {
+  margin: 3px;
+}
+
+div.dokuwiki img.medialeft {
+  border: 0;
+  float: left;
+  margin: 0 1.5em 0 0;
+}
+
+div.dokuwiki img.mediaright {
+  border: 0;
+  float: right;
+  margin: 0 0 0 1.5em;
+}
+
+div.dokuwiki img.mediacenter {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+/* smileys */
+div.dokuwiki img.middle {
+  vertical-align: middle;
+}
+
+div.dokuwiki acronym {
+  cursor: help;
+  border-bottom: 1px dotted __text__;
+}
+
+/* indent different sections */
+div.dokuwiki div.level1 {margin-left: 3px;}
+div.dokuwiki div.level2 {margin-left: 23px;}
+div.dokuwiki div.level3 {margin-left: 43px;}
+div.dokuwiki div.level4 {margin-left: 63px;}
+div.dokuwiki div.level5 {margin-left: 83px;}
+
+/* code blocks by indention */
+div.dokuwiki pre.pre {
+  background-color: __background_other__;
+}
+
+/* code blocks by code tag */
+div.dokuwiki pre.code {
+  background-color: __background_other__;
+}
+
+/* code blocks by file tag */
+div.dokuwiki pre.file {
+  background-color: __background_alt__;
+}
+
+/* inline tables */
+div.dokuwiki table.inline {
+  background-color: __background__;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+div.dokuwiki table.inline th {
+  padding: 3px;
+  border: 1px solid __border__;
+  background-color: __background_alt__;
+}
+
+div.dokuwiki table.inline td {
+  padding: 3px;
+  border: 1px solid __border__;
+}
+
+/* --------------------- footnotes -------------------------------- */
+
+div.dokuwiki div.footnotes {
+  clear: both;
+  border-top: 1px solid __border__;
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+div.dokuwiki div.fn {
+  font-size: 90%;
+}
+
+div.dokuwiki a.fn_top {
+  vertical-align: super;
+  font-size: 80%;
+}
+
+div.dokuwiki a.fn_bot {
+  vertical-align: super;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+/* insitu-footnotes */
+div.insitu-footnote {
+  font-size: 80%;
+  line-height: 1.2em;
+  border: 1px solid __border__;
+  background-color: __background_other__;
+  text-align: left;
+  padding: 4px;
+  max-width: 40%;    /* IE's width is handled in javascript */
+}
+
+/* overcome IE issue with one line code or file boxes which require h. scrolling */
+* html .insitu-footnote pre.code,
+* html .insitu-footnote pre.file {
+  padding-bottom: 18px;
+}
+
+/* ------------------ Additional ---------------------- */
+
+div.footerinc {
+    text-align: center;
+}
+.footerinc a img {
+    opacity: 0.5;
+    border: 0;
+}
+
+.footerinc a:hover img {
+    opacity: 1;
+}
+
+/* ---------------  Image Details  ----------------- */
+
+div.dokuwiki div.img_big {
+  float: left;
+  margin-right: 0.5em;
+}
+
+div.dokuwiki dl.img_tags dt {
+  font-weight: bold;
+  background-color: __background_alt__;
+}
+div.dokuwiki dl.img_tags dd {
+  background-color: __background_neu__;
+}
+
+div.dokuwiki div.imagemeta {
+  color: __text_neu__;
+  font-size: 70%;
+  line-height: 95%;
+}
+
+div.dokuwiki div.imagemeta img.thumb {
+  float:left;
+  margin-right: 0.1em;
+}

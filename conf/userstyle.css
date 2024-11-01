@@ -1,0 +1,108 @@
+div.dokuwiki div.level1, 
+div.dokuwiki div.level2, 
+div.dokuwiki div.level3, 
+div.dokuwiki div.level4, 
+div.dokuwiki div.level5 {
+    margin-left: 2px;
+}
+
+div.box {
+    width: 80%;
+}
+
+div.box.warning .box_content {
+    border: none;
+    background: none;
+    padding: 20px 10px 10px 60px;
+    background-color: none;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url(../images/warning.png);
+}
+div.box.important .box_content {
+    border: none;
+    background: none;
+    padding: 20px 10px 10px 60px;
+    background-color: none;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url(../images/important.png);
+}
+div.box.note .box_content {
+    border: none;
+    background: none;
+    padding: 20px 10px 10px 60px;
+    background-color: none;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url(../images/note.png);
+}
+div.box.tip .box_content {
+    border: none;
+    background: none;
+    padding: 20px 10px 10px 60px;
+    background-color: none;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url(../images/tip.png);
+}
+
+/** download box **/
+div.box.download, div.box.download div.xbox {
+    border: none;
+    padding: none;
+    background: none;
+}
+
+div.box.download b {
+    display: hidden;
+}
+
+div.box.download .box_content {
+    border: none;
+    background: #D0F29D url('../images/parrafo-download.png') 10px center no-repeat;
+    border-top: 2px solid #9CD941;
+    border-bottom: 2px solid #9CD941;
+    margin: 10px auto;
+    padding: 10px 20px 10px 45px;
+}
+
+/** favorite box **/
+div.box.favorite, div.box.favorite div.xbox {
+    border: none;
+    padding: none;
+    background: none;
+}
+
+div.box.favorite b {
+    display: hidden;
+}
+
+div.box.favorite .box_content {
+    border: none;
+    background: #FFF6BF url('../images/parrafo-favorite.png') 10px center no-repeat;
+    border-top: 2px solid #FFD324;
+    border-bottom: 2px solid #FFD324;
+    margin: 10px auto;
+    padding: 10px 20px 10px 45px;
+}
+
+/** info box **/
+div.box.info, div.box.info div.xbox {
+    border: none;
+    padding: none;
+    background: none;
+}
+
+div.box.info b {
+    display: hidden;
+}
+
+div.box.info .box_content {
+    border: none;
+    background: #9DD1F2 url('../images/parrafo-info.png') 10px center no-repeat;
+    border-top: 2px solid #419ED9;
+    border-bottom: 2px solid #419ED9;
+    margin: 10px auto;
+    padding: 10px 20px 10px 45px;
+}
